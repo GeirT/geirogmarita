@@ -9,4 +9,5 @@ twitter_username: geirbert
 github_username:  GeirT
 
 # Build settings
+exclude: [Gemfile, Gemfile.lock]
 markdown: kramdown

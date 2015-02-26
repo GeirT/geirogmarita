@@ -4,6 +4,7 @@
   overflow: hidden
   box-shadow: 0px 0px 43px -10px black
   position: relative
+  margin-bottom: $spacing-unit
 
   &.first,
   &.second
@@ -13,7 +14,7 @@
     margin-right: 46px
 
   a
-    color: #2a2b39
+    color: $text-color-dark
     text-decoration: none
     -moz-transition: all 0.2s ease-in-out
     -o-transition: all 0.2s ease-in-out
@@ -21,7 +22,7 @@
     transition: all 0.2s ease-in-out
 
     &:hover
-      color: #6acd79
+      color: $signal-color-1
 
   .flip
     -moz-transition: all 0.5s ease
@@ -34,7 +35,7 @@
     width: 100%
     position: absolute
     height: 100%
-    background: #fff
+    background: $background-color-light
     box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45)
     -moz-transform: scale(1, 1)
     -ms-transform: scale(1, 1)
@@ -47,7 +48,7 @@
 
     .top
       height: 50%
-      background: #2a2b39
+      background: $grey-color-dark
 
       &:after
         position: absolute
@@ -66,11 +67,11 @@
 
       .logo
         display: inline-block
-        background: #6acd79
-        color: #fff
+        background: $signal-color-1
+        color: $text-color-light
         z-index: 11
         padding: .16em
-        border: 8px solid #fff
+        border: 8px solid $border-color-light
         position: relative
         pointer-events: none
         -moz-transform: translateX(-50%)
@@ -96,7 +97,7 @@
       z-index: 8
 
     .name
-      color: #2a2b39
+      color: $text-color-dark
       font-weight: 400
       font-size: 3.2em
       text-align: center
@@ -111,16 +112,16 @@
         left: 40%
         right: 40%
         height: 1px
-        background: #2a2b39
+        background: $grey-color-dark
 
     .introduction
       text-align: center
-      color: #2a2b39
+      color: $text-color-dark
       font-family: 'Old Standard TT', serif
       font-style: italic
 
     .contact
-      color: #2a2b39
+      color: $text-color-dark
       margin-left: 1.7em
       font-weight: 300
       font-size: 1.6em
@@ -130,7 +131,7 @@
       transform: translateY(400%)
 
       span
-        color: #2D3244
+        color: $text-color-dark
         font-size: 1.7em
         width: 1.3em
         display: inline-block
@@ -142,7 +143,7 @@
   .back
     width: 100%
     height: 100%
-    background: #fff
+    background: $background-color-light
     backface-visibility: hidden
     position: absolute
 
@@ -170,7 +171,7 @@
     .logo
       margin-top: .28em
       font-size: 1.3em
-      border: 3px solid #fff
+      border: 3px solid $border-color-light
       margin-left: .15em
       -moz-transform: translateX(0)
       -ms-transform: translateX(0)

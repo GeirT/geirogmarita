@@ -24,7 +24,7 @@ body
   font-size: $base-font-size
   // line-height: $base-line-height
   font-weight: 300
-  color: $text-color
+  color: $text-color-dark
   background-color: $background-color
   -webkit-text-size-adjust: 100%
 
@@ -102,7 +102,7 @@ a
     color: darken($brand-color, 15%)
 
   &:hover
-    color: $text-color
+    color: $text-color-dark
     text-decoration: underline
 
 
@@ -191,9 +191,9 @@ pre
 // Selection
 //
 ::selection
-  color: #fff
+  color: $lightest-color
   background: #2a2b39
 
 ::-moz-selection
-  color: #fff
+  color: $lightest-color
   background: #2a2b39

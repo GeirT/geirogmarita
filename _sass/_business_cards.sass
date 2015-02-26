@@ -2,7 +2,7 @@
   height: 320px
   width: 427px
   overflow: hidden
-  box-shadow: 0px 0px 43px -10px black
+  box-shadow: 0px 0px 43px -5px black
   position: relative
   margin-bottom: $spacing-unit
 
@@ -13,6 +13,19 @@
   &.first
     margin-right: 46px
 
+    .front .top .logo
+      background: $signal-color-1
+
+    a:hover
+      color: $signal-color-1
+
+  &.second
+    .front .top .logo
+      background: $signal-color-2
+
+    a:hover
+      color: $signal-color-2
+
   a
     color: $text-color-dark
     text-decoration: none
@@ -21,8 +34,6 @@
     -webkit-transition: all 0.2s ease-in-out
     transition: all 0.2s ease-in-out
 
-    &:hover
-      color: $signal-color-1
 
   .flip
     -moz-transition: all 0.5s ease
@@ -67,7 +78,6 @@
 
       .logo
         display: inline-block
-        background: $signal-color-1
         color: $text-color-light
         z-index: 11
         padding: .16em

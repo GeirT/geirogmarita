@@ -3,7 +3,7 @@ title: Geir og Marita
 description: > # this means to ignore newlines until "baseurl:"
   Business card site for Geir Tønnessen and Marita Nodland.
   It has links to our blogs, project pages and social media presences.
-baseurl: "/geirogmarita" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://GeirOgMarita.net" # the base hostname & protocol for your site
 twitter_username: geirbert
 github_username:  GeirT

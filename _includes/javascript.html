@@ -1,0 +1,20 @@
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  function touch_screen(){
+    return !document.documentElement.classList.contains("no-touch");
+  }
+
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+  }
+
+  if ( touch_screen() ) {
+    var cards = document.querySelectorAll(".flip");
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].onclick = function() {
+        this.classList.toggle("hover");
+      }
+    }
+  }
+}, false);
+</script>

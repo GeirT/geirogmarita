@@ -28,16 +28,19 @@ $border-color-light:     $lightest-color
 
 $brand-color:            #2a7ae2
 
-$on-palm:   600px
-$on-laptop: 800px
+$on-phone:   400px
+$up-to-desktop: 960px
+$on-desktop:    960px
+
+$max-width: $on-desktop
 
 
-// Using media queries with like this:
+// Use media queries like this:
 // @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
 // }
 @mixin media-query($device)
   @media screen and (max-width: $device)

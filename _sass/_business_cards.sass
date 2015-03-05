@@ -6,12 +6,21 @@
   position: relative
   margin-bottom: $spacing-unit
 
+  @include media-query($up-to-desktop)
+    margin: 0 auto $spacing-unit auto
+
   &.first,
   &.second
     float: left
 
+    @include media-query($up-to-desktop)
+      float: none
+
   &.first
     margin-right: 46px
+
+    @include media-query($up-to-desktop)
+      margin-right: auto
 
     .front .top .logo
       background: $signal-color-1

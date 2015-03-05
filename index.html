@@ -2,5 +2,6 @@
 layout: default
 ---
 
-{% include business_card_geir.html   %}
-{% include business_card_marita.html %}
+{% for card in site.data.cards %}
+  {% include business_card.html %}
+{% endfor %}

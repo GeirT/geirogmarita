@@ -1,0 +1,41 @@
+- name: Geir Tønnessen
+  initials: GT
+  title: Webutvikler
+  class: first
+  contact:
+    icon_1: ion-paper-airplane
+    link_1: mailto:geir@geirogmarita.net
+    text_1: geir@geirogmarita.net
+    icon_2: ion-earth
+    link_2: http://GeirOgMarita.net/
+    text_2: GeirOgMarita.net
+    icon_3: ion-social-linkedin
+    link_3: http://no.linkedin.com/in/GeirTonnessen
+    text_3: '@GeirTonnessen'
+    icon_4: ion-social-github
+    link_4: https://github.com/GeirT
+    text_4: '@GeirT'
+    icon_5: ion-social-instagram
+    link_5: https://instagram.com/g_e_i_r_t/
+    text_5: '@g_e_i_r_t'
+
+- name: Marita Nodland
+  initials: MN
+  title: Bibliotekar
+  class: second
+  contact:
+    icon_1: ion-paper-airplane
+    link_1: mailto:post@dragemamma.net
+    text_1: post@dragemamma.net
+    icon_2: ion-earth
+    link_2: http://www.dragemamma.net/
+    text_2: dragemamma.net
+    icon_3: ion-earth
+    link_3: http://drageblogger.blogspot.no/
+    text_3: drageblogger.blogspot.no
+    icon_4: ion-social-twitter
+    link_4: https://twitter.com/manodl
+    text_4: '@manodl'
+    icon_5: ion-social-instagram
+    link_5: https://instagram.com/dragemamma/
+    text_5: '@dragemamma'

@@ -4,17 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
     return !document.documentElement.classList.contains("no-touch");
   }
 
+  function outside_click(target) {
+    return (
+      target.className == "wrapper" ||
+      target.tagName   == "HEADER"  ||
+      target.tagName   == "FOOTER"
+    ) ? true : false
+  }
+
   if (!("ontouchstart" in document.documentElement)) {
     document.documentElement.className += " no-touch";
   }
 
   if ( touch_screen() ) {
+    var body  = document.getElementsByTagName("body")[0];
     var cards = document.querySelectorAll(".flip");
+
     for (var i = 0; i < cards.length; i++) {
       cards[i].onclick = function() {
         this.classList.toggle("hover");
       }
     }
+
+    body.onclick = function(event) {
+      if ( outside_click(event.target) ) {
+        for (var i = 0; i < cards.length; i++) {
+          cards[i].classList.remove("hover");
+        }
+      }
+    }
   }
+
 }, false);
+
 </script>

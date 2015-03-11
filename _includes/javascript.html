@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    body.onclick = function(event) {
+    body.ontouchend = function(event) {
       if ( outside_click(event.target) ) {
         for (var i = 0; i < cards.length; i++) {
           cards[i].classList.remove("hover");
